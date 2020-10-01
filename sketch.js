@@ -20,6 +20,12 @@ function draw() {
     arr[i].update();
     arr[i].draw();
   }
+  //Had to do that twice
+  for(let j=0;j<arr.length;i++)
+  {
+    arr[j].update();
+    arr[j].draw();
+  }
 
 }
 
@@ -31,8 +37,6 @@ function mousePressed(){
 function mouseDragged(){
   for(let i=0;i<arr.length;i++)
   {
-    // arr[i].x = mouseX;
-    // arr[i].y = mouseY;
     arr[i].tail();
   }
 }
