@@ -29,6 +29,14 @@ function draw() {
 
 }
 
+function setColorBackground() {
+  var x = Math.round( Math.random() * 255);
+  var y = Math.round( Math.random() * 255);
+  var z = Math.round( Math.random() * 255);
+
+  var bg = `background: rgb({x},{y},{z}`;
+}
+
 function mousePressed(){
   if(onscreen)
     arr.push(new Bubble(mouseX, mouseY, random(15,25)))
